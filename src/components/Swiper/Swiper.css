@@ -1,0 +1,205 @@
+.Comments>p {
+    color: #583FBC;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 166.667% */
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+}
+
+.Comments>h2 {
+    color: #113766;
+    font-family: 'Inter';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.6px;
+    text-align: center;
+}
+
+.comments__icon {
+    color: yellow;
+    font-size: 24px;
+    margin-top: 32px;
+
+}
+
+.comments__icon>i {
+    margin-left: 5px;
+}
+
+.Comments__cards {
+
+    display: flex;
+    gap: 70px 33px;
+    margin-top: 76px;
+    /* flex-wrap: wrap; */
+}
+
+.Comments__cards__card>img {
+    position: absolute;
+    top: -40px;
+}
+
+.Comments__cards__card {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 69px 39px 48px 39px;
+    border-radius: 32px;
+    background: #FFF;
+
+    box-shadow: 0px 3px 49px 9px rgba(0, 0, 0, 0.06);
+
+}
+
+.Comments__cards__card>p {
+    color: #181945;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    letter-spacing: -0.32px;
+    margin-top: 8px;
+}
+
+.Comments__cards__card>h4 {
+    color: #181945;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 155.556% */
+    letter-spacing: -0.36px;
+}
+
+.call {
+    display: flex;
+    padding: 36px 65px 36px 77px;
+    border-radius: 24px;
+    background: linear-gradient(124deg, #03ACF2 0%, #C8E6C9 100%);
+    gap: 14px;
+    margin-top: 196px;
+}
+.call__info>h2{
+    color: #FFF;
+    font-family: 'Lato';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.call__info>p{
+    color: #FFF;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.call__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 34.5px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    padding: 14px 20px;
+}
+
+.call__input>input {
+    border: none;
+    color: #808080;
+font-family: 'Lato';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.call__input>button {
+
+    max-width: 280px;
+    width: 100%;
+    padding: 10px 40px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 35px;
+    background: linear-gradient(136deg, #03ACF2 0%, #83DEAE 100%);
+    border: none;
+}
+@media screen and (max-width:1040px) {
+.call{
+flex-direction: column;
+align-items: center;
+}
+.call__input{
+max-width: 530px;
+width: 100%;
+}
+.call__input>button{
+max-width: 280px;
+width: 100%;
+}
+.call__info>p {
+
+    text-align: center;
+}
+}
+@media screen and (max-width:974px) {
+    .Comments__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:864px) {
+    .Comments__cards {
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:600px) {
+    .call__input{
+    flex-direction: column;
+    }
+    .call__input >input{
+    text-align: center;
+    margin-bottom: 9px;
+    }
+    .call__info>p{
+    font-size: 10px;
+    }
+    .call__info>h2{
+        font-size: 16px;
+        }
+
+}
+@media screen and (max-width:400px) {
+    .call__input>button {
+    font-size: 10px;
+    }
+    .call__input>input{
+    max-width: 280px;
+    width: 100%;
+    }
+}

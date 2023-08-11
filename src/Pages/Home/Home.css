@@ -1,0 +1,112 @@
+.header__hero__title {
+    color: #113766;
+    font-family: 'Inter';
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 149px;
+}
+
+.header__hero {
+    display: flex;
+}
+
+.header__hero__about>p {
+    max-width: 343px;
+    width: 100%;
+    color: #113766;
+    font-family: 'Inter';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header__hero__about>button {
+    display: flex;
+    max-width: 361px;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    background: linear-gradient(136deg, #03ACF2 0%, #83DEAE 100%);
+    flex-shrink: 0;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 213px;
+}
+.header__hero__img{
+
+margin-left: 72px;
+margin-top: 83px;
+}
+.header__hero__about__img{
+display: none;
+}
+@media screen and (max-width:943px) {
+    .header__hero__img{
+    display: none;
+    } 
+    .header__hero__about__img{
+    display: block;
+    margin-top: 48px;
+    max-width: 633px;
+    width: 100%;
+    }
+    .header__hero__about__img>img{
+    width: 100%;
+    }
+    .header__hero__about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    }
+
+    .header__hero-titleBox{
+        max-width: 1943px;
+        width: 100%;
+        margin: 0 auto;
+   
+    }
+    .header__hero__about>p {
+        max-width: 343px;
+        width: 100%;
+        color: #113766;
+        font-family: 'Inter';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .header__hero__about>button {
+    margin-top: 62px;
+    }
+}
+@media screen and (max-width:611px) {
+    .header__hero__title{
+        text-align: center;
+        font-size: 62px;
+        } 
+}
+@media screen and (max-width:543px) {
+    .header__hero__title{
+        text-align: center;
+        font-size: 38px;
+        } 
+}
+
+@media screen and (max-width:368px){
+    .header__hero__about>p {
+        font-size: 16px;
+        text-align: center;
+    }
+}
