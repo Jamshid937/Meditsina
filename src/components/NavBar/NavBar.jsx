@@ -32,7 +32,7 @@ function NavBar() {
               <li className="nav-item">
                 <a
                   exact
-                  href="#services"
+                  href="#servic"
                   activeClassName="active"
                   className="nav-links"
                   onClick={click ? handleClick : null}
@@ -43,7 +43,7 @@ function NavBar() {
               <li className="nav-item">
                 <a
                   exact
-                  href="#portfolio"
+                  href="#footer"
                   activeClassName="active"
                   className="nav-links"
                   onClick={click ? handleClick : null}

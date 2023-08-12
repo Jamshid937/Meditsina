@@ -22,11 +22,11 @@ const About = () => {
     <>
        <div className='about'>
           <p className='about__info'>Men bilan tanishuv</p>
-          <h2 className='about__title'>Men haqimda</h2>
+          <h2 id='about' className='about__title' >Men haqimda</h2>
           <p className='about__text'>Curabitur egestas consequat lorem, vel fermentum augue porta id. Aliquam lobortis magna neque, gravida consequat velit venenatis at. Curabitur egestas consequat lorem, vel fermentum augue porta id. Aliquam lobortis magna neque, gravida consequat velit venenatis at. Curabitur egestas consequat lorem, vel fermentum augue porta id. Aliquam lobortis magna neque, gravida consequat velit venenatis at.</p>
 
           <div className='about__imgs-one'>
-             <img src={one} alt="" />
+             <img src={one} alt=""  className='one'/>
              <img src={two} alt="" />
              <img src={three} alt="" />
              <img src={four} alt="" />
