@@ -15,9 +15,34 @@ const Footer = () => {
        </div>
        <div className='footer__link'>
         <ul className='footer__link__list'>
-            <li className='footer__link__list__item'>Men haqimda</li>
-            <li className='footer__link__list__item'>Xizmatlar</li>
-            <li className='footer__link__list__item'>Konsultatsiyaga yozilish</li>
+            <li className='footer__link__list__item'>
+            <a
+                  exact
+                  href="#about"
+                  activeClassName="active"
+                //   onClick={click ? handleClick : null}
+                >
+                  Men haqimda
+                </a> 
+            </li>
+            <li className='footer__link__list__item'>                
+            <a
+                  exact
+                  href="#servic"
+                  activeClassName="active"
+                >
+                  Xizmatlar
+                </a>
+                </li>
+            <li className='footer__link__list__item'>
+            <a
+                  exact
+                  href="#footer"
+                  activeClassName="active"
+                >
+                  Konsultatsiyaga yozilish
+                </a>
+            </li>
         </ul>
        </div>
        <div className='footer__contact'>

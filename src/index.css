@@ -4,6 +4,7 @@
     padding: 0;
     list-style-type: none;
     text-decoration: none;
+    outline: none;
 }
 body{
     fill: #D5F5FF;

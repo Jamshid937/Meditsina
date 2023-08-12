@@ -90,7 +90,7 @@ const About = () => {
                <img src={young} alt="" />
             </div>
          </div>
-         <div className='galery'>
+         <div id='servic' className='galery'>
             <p className='galery__info'>Galery</p>
             <h2 className='galery__title'>Ishlarimizdan namunalar</h2>
             <p className='galery__text'>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>

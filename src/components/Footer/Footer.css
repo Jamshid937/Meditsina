@@ -53,7 +53,7 @@ width: 100%;
     margin-top: 42px;
    margin-bottom: 24px;
 }
-.footer__link__list__item{
+.footer__link__list__item>a{
     color: #FFF;
     font-family: 'Inter';
     font-size: 14px;
@@ -61,7 +61,10 @@ width: 100%;
     font-weight: 400;
     line-height: 18px; /* 128.571% */
     letter-spacing: -0.28px;
-    margin-top: 24px;
+    
+}
+.footer__link__list__item{
+margin-top: 24px;
 }
 .footer__contact>p{
     color: rgba(255, 255, 255, 0.60);

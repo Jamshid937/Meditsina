@@ -118,6 +118,8 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 margin-right: 6px;
+outline: none;
+border: none;
 }
 .nav-item_select__bar{
   width: 63.333px;

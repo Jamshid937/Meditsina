@@ -48,15 +48,16 @@ const Swiper = () => {
             </div>
            </div>
         </div>
-        <div className='call'>
+        <div id='footer' className='call'>
             <div className='call__info'>
                 <h2>Tel raqamingizni qoldiring</h2>
                 <p>Va biz sizga aloqaga chiqamiz</p>
             </div>
-            <div className='call__input'>
+            <form className='call__input'>
                 <input type="number" name="" id="" placeholder='+(000) 000 00 00' />
+                <input type="text" placeholder='ism' />
                 <button>Tasdiqlash</button>
-            </div>
+            </form>
         </div>
     </div>
   )

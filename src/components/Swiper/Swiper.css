@@ -5,7 +5,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
-    /* 166.667% */
     letter-spacing: 0.96px;
     text-transform: uppercase;
 }
@@ -25,7 +24,6 @@
     color: yellow;
     font-size: 24px;
     margin-top: 32px;
-
 }
 
 .comments__icon>i {
@@ -37,14 +35,11 @@
     display: flex;
     gap: 70px 33px;
     margin-top: 76px;
-    /* flex-wrap: wrap; */
 }
-
 .Comments__cards__card>img {
     position: absolute;
     top: -40px;
 }
-
 .Comments__cards__card {
     position: relative;
     max-width: 400px;
@@ -69,7 +64,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
-    /* 162.5% */
     letter-spacing: -0.32px;
     margin-top: 8px;
 }
@@ -82,7 +76,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
-    /* 155.556% */
     letter-spacing: -0.36px;
 }
 
@@ -94,7 +87,8 @@
     gap: 14px;
     margin-top: 196px;
 }
-.call__info>h2{
+
+.call__info>h2 {
     color: #FFF;
     font-family: 'Lato';
     font-size: 36px;
@@ -102,7 +96,8 @@
     font-weight: 900;
     line-height: normal;
 }
-.call__info>p{
+
+.call__info>p {
     color: #FFF;
     font-family: 'Lato';
     font-size: 24px;
@@ -110,6 +105,7 @@
     font-weight: 700;
     line-height: normal;
 }
+
 .call__input {
     display: flex;
     justify-content: center;
@@ -118,17 +114,19 @@
     border: 1px solid #FFF;
     background: #FFF;
     padding: 14px 20px;
+    gap: 5px;
 }
 
 .call__input>input {
     border: none;
     color: #808080;
-font-family: 'Lato';
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #03ACF2;
 }
 
 .call__input>button {
@@ -147,24 +145,53 @@ text-transform: uppercase;
     background: linear-gradient(136deg, #03ACF2 0%, #83DEAE 100%);
     border: none;
 }
-@media screen and (max-width:1040px) {
-.call{
-flex-direction: column;
-align-items: center;
-}
-.call__input{
-max-width: 530px;
-width: 100%;
-}
-.call__input>button{
-max-width: 280px;
-width: 100%;
-}
-.call__info>p {
 
-    text-align: center;
+@media screen and (max-width:1144px) {
+    .call__info>h2 {
+        font-size: 22px;
+    }
+
+    .call__info>p {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width:1040px) {
+        .call__info>h2 {
+            font-size: 36px;
+        }
+
+        .call__info>p {
+            font-size: 22px;
+        }
+    }
+
+    .call {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .call__input {
+        max-width: 530px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .call__input>input {
+        text-align: center;
+        margin-bottom: 9px;
+    }
+
+    .call__input>button {
+        max-width: 280px;
+        width: 100%;
+    }
+
+    .call__info>p {
+
+        text-align: center;
+    }
 }
-}
+
 @media screen and (max-width:974px) {
     .Comments__cards {
         flex-wrap: wrap;
@@ -178,28 +205,29 @@ width: 100%;
         align-items: center;
     }
 }
+
 @media screen and (max-width:600px) {
-    .call__input{
-    flex-direction: column;
+    .call__input {
+        flex-direction: column;
     }
-    .call__input >input{
-    text-align: center;
-    margin-bottom: 9px;
+
+    .call__info>p {
+        font-size: 10px;
     }
-    .call__info>p{
-    font-size: 10px;
-    }
-    .call__info>h2{
+
+    .call__info>h2 {
         font-size: 16px;
-        }
+    }
 
 }
+
 @media screen and (max-width:400px) {
     .call__input>button {
-    font-size: 10px;
+        font-size: 10px;
     }
-    .call__input>input{
-    max-width: 280px;
-    width: 100%;
+
+    .call__input>input {
+        max-width: 280px;
+        width: 100%;
     }
 }
