@@ -6,7 +6,6 @@ import three from '../../Imgs/three.png'
 import four from '../../Imgs/four.png'
 import five from '../../Imgs/five.png'
 import six from '../../Imgs/six.png'
-import uskunalar from '../../Imgs/uskunalar.png'
 import galochka from '../../Imgs/galochka.svg'
 import young from '../../Imgs/young.png'
 import denTistOne from '../../Imgs/denTistOne.png'
@@ -17,13 +16,16 @@ import denTistFour from '../../Imgs/denTistFour.png'
 import denTistSix from '../../Imgs/denTistSix.png'
 import Rectangle from '../../Imgs/Rectangle.png'
 import Swiper from '../Swiper'
+import reg from '../../Imgs/reg.jpg'
+import eeg from '../../Imgs/eeg.jpg'
+import bac from '../../Imgs/bac.jpg'
 const About = () => {
   return (
     <>
        <div className='about'>
           <p className='about__info'>Men bilan tanishuv</p>
           <h2 id='about' className='about__title' >Men haqimda</h2>
-          <p className='about__text'>Curabitur egestas consequat lorem, vel fermentum augue porta id. Aliquam lobortis magna neque, gravida consequat velit venenatis at. Curabitur egestas consequat lorem, vel fermentum augue porta id. Aliquam lobortis magna neque, gravida consequat velit venenatis at. Curabitur egestas consequat lorem, vel fermentum augue porta id. Aliquam lobortis magna neque, gravida consequat velit venenatis at.</p>
+          <p className='about__text'>⚕️ Bakirova Dilafruz Akbaralievna - diagnostika shifokori, uchinchi toifali shifokor, 5 yillik tajribaga ega. Uchrashuvni onlayn yoki telefon orqali bron qiling.</p>
 
           <div className='about__imgs-one'>
              <img src={one} alt=""  className='one'/>
@@ -36,32 +38,32 @@ const About = () => {
         <h3 className='about__bottom__title'>Zamonoviy uskunalar</h3>
         <div className='about__bottom'>
          <div className='about__bottom__cards'>
-            <img src={uskunalar} alt="" />
+            <img src={reg} alt="" />
             <div className='about__bottom__cards__info'>
               <h4>Zamonaviy uskunalar</h4>
-              <p>Aliquam lobortis magna neque, gravida consequat velit venenatis at. Curabitur egestas consequat lorem, vel fermentum augue porta id. Aliquam lobortis magna neque, gravida consequat velit venenatis at. </p>
+              <p>Miyaning reoensefalografiyasi- diagnostika uchun foydalaniladi. </p>
               <div className='about__bottom__cards__info__btn'>
-               <button>Aparat nomi</button>
+               <button className='btn__reg'>REG</button>
               </div>
             </div>
          </div>
          <div className='about__bottom__cards'>
-            <img src={uskunalar} alt="" />
+            <img src={bac} alt="" />
             <div className='about__bottom__cards__info'>
               <h4>Zamonaviy uskunalar</h4>
-              <p>Aliquam lobortis magna neque, gravida consequat velit venenatis at. Curabitur egestas consequat lorem, vel fermentum augue porta id. Aliquam lobortis magna neque, gravida consequat velit venenatis at. </p>
+              <p>Bioakustik tuzatish usuli BAC - bu o'z-o'zini boshqarish mexanizmlarini faollashtirish uchun real vaqt rejimida EEG asosida hosil bo'lgan tovushlar bilan miyaning tartibga soluvchi tuzilmalarini sensorli stimulyatsiya qilish </p>
               <div className='about__bottom__cards__info__btn'>
-               <button>Aparat nomi</button>
+               <button className='btn__bac'>BAC</button>
               </div>
             </div>
          </div>
          <div className='about__bottom__cards'>
-            <img src={uskunalar} alt="" />
+            <img src={eeg} alt="" />
             <div className='about__bottom__cards__info'>
               <h4>Zamonaviy uskunalar</h4>
-              <p>Aliquam lobortis magna neque, gravida consequat velit venenatis at. Curabitur egestas consequat lorem, vel fermentum augue porta id. Aliquam lobortis magna neque, gravida consequat velit venenatis at. </p>
+              <p>Bosh miya bilan bog'liq kasalliklarni aniqlab, diagnoz qo'yuvchi apparat.</p>
               <div className='about__bottom__cards__info__btn'>
-               <button>Aparat nomi</button>
+               <button className='btn__eeg'>EEG</button>
               </div>
             </div>
          </div>
@@ -112,7 +114,7 @@ const About = () => {
                      <img src={Rectangle} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
-                     <h4>Bel og’rig’ini davolash</h4>
+                     <h4>Iglorefleksoterapiya</h4>
                      <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
                    </div>
                </div>
@@ -121,7 +123,7 @@ const About = () => {
                      <img src={Rectangle} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
-                     <h4>Bel og’rig’ini davolash</h4>
+                     <h4>Ozonoterapiya</h4>
                      <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
                    </div>
                </div>
@@ -130,7 +132,7 @@ const About = () => {
                      <img src={Rectangle} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
-                     <h4>Bel og’rig’ini davolash</h4>
+                     <h4>Plazmolifting</h4>
                      <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
                    </div>
                </div>
@@ -139,7 +141,7 @@ const About = () => {
                      <img src={Rectangle} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
-                     <h4>Bel og’rig’ini davolash</h4>
+                     <h4>Proloterapiya</h4>
                      <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
                    </div>
                </div>
@@ -148,7 +150,7 @@ const About = () => {
                      <img src={Rectangle} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
-                     <h4>Bel og’rig’ini davolash</h4>
+                     <h4>Voyta-terapiya</h4>
                      <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
                    </div>
                </div>
@@ -157,7 +159,7 @@ const About = () => {
                      <img src={Rectangle} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
-                     <h4>Bel og’rig’ini davolash</h4>
+                     <h4>Farmakopunktura</h4>
                      <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
                    </div>
                </div>
@@ -166,25 +168,7 @@ const About = () => {
                      <img src={Rectangle} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
-                     <h4>Bel og’rig’ini davolash</h4>
-                     <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
-                   </div>
-               </div>
-               <div className='treatment__cards__card'>
-                   <div className='treatment__cards__card__img'>
-                     <img src={Rectangle} alt=''/>
-                   </div>
-                   <div className='treatment__cards__card__about'>
-                     <h4>Bel og’rig’ini davolash</h4>
-                     <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
-                   </div>
-               </div>
-               <div className='treatment__cards__card'>
-                   <div className='treatment__cards__card__img'>
-                     <img src={Rectangle} alt=''/>
-                   </div>
-                   <div className='treatment__cards__card__about'>
-                     <h4>Bel og’rig’ini davolash</h4>
+                     <h4>Gidromassaj</h4>
                      <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
                    </div>
                </div>

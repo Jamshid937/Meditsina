@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
             <div className='footer__contact__card__about'>
                 <h4>Tel raqam</h4>
-                <p>+088 123 654 987</p>
+                <p>+998909420301</p>
             </div>
         </div>
         <div className='footer__contact__card'>
@@ -71,7 +71,7 @@ const Footer = () => {
             </div>
             <div className='footer__contact__card__about'>
                 <h4>Manzil</h4>
-                <p>35 West Dental Street California 1004</p>
+                <p>Mirzo Ulug'bek shoh ko'chasi, Тоshkent</p>
             </div>
         </div>
         <div className='primeTech'>

@@ -34,6 +34,7 @@
     line-height: 36px;
     /* 150% */
     margin-top: 33px;
+    padding-bottom: 20px;
 }
 
 .about__imgs-one {
@@ -81,7 +82,13 @@ flex-wrap: wrap;
 .about__bottom__cards__info {
     padding: 24px 26px 0 24px;
 }
-
+.about__bottom__cards>img{
+    max-width: 288px;
+    width: 100%;
+    height: 212px;
+    flex-shrink: 0;
+    border-radius: 10px 10px 57px 0px;
+}
 .about__bottom__cards__info>h4 {
 
     color: #000;
@@ -295,6 +302,10 @@ display: grid;
 grid-template-columns: auto auto;
 grid-template-rows: auto auto auto auto auto;
 gap: 40px;
+}
+.btn__eeg,
+.btn__reg{
+margin-top: 62px;
 }
 @media screen and (max-width:768px) {
     .treatment__cards{
