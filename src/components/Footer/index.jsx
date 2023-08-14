@@ -1,8 +1,9 @@
 import React from 'react'
 import './Footer.css'
-import group from '../../Imgs/Group.png'
+// import group from '../../Imgs/Group.png'
 import Tell from '../../Imgs/Tell.png'
 import Logo from '../../Imgs/Logo.png'
+import { FaFacebook, FaInstagram, FaTelegram } from 'react-icons/fa'
 const Footer = () => {
   return (
 <div className='footerBack'>
@@ -11,7 +12,12 @@ const Footer = () => {
         <p className='footer__about__logo'>Logo</p>
         <p className='footer__about__text'>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
        <p className='footer__about__media'>FOllow us on</p>
-       <img src={group} alt="" />
+       <div className='footer__about__media__icons'>
+          <FaFacebook className='fasbook' color='white'/>
+          <FaTelegram color='white'/>
+          <FaInstagram color='white'/>
+       </div>
+
        </div>
        <div className='footer__link'>
         <ul className='footer__link__list'>

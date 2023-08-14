@@ -19,6 +19,7 @@ import Swiper from '../Swiper'
 import reg from '../../Imgs/reg.jpg'
 import eeg from '../../Imgs/eeg.jpg'
 import bac from '../../Imgs/bac.jpg'
+
 const About = () => {
   return (
     <>
