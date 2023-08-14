@@ -155,6 +155,14 @@ display: none;
     border-bottom: 1px solid #03ACF2;
     padding-bottom: 7px;
 }
+.PhoneInputCountry {
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    margin-right: var(--PhoneInputCountrySelect-marginRight);
+    border-bottom: 1px solid #03ACF2;
+}
 @media screen and (max-width:1144px) {
     .call__info>h2 {
         font-size: 22px;
@@ -237,6 +245,11 @@ display: none;
 
     .call__input>input {
         max-width: 280px;
+        width: 100%;
+    }
+    .PhoneInput {
+        display: flex;
+        align-items: center;
         width: 100%;
     }
 }
