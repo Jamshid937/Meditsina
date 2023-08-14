@@ -2,7 +2,8 @@ import React from 'react'
 import './Swiper.css'
 import { useState, useEffect } from 'react'
 import { validateName, validatePhoneContent, validatePhoneNumber, validateText } from './halper'
-
+import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 import { FaStar } from 'react-icons/fa'
 import mask from '../../Imgs/Mask.png'
 
@@ -26,6 +27,7 @@ const Swiper = () => {
   // }
   const [fields,setFields] = useState(initialData)
   const [disablad, setDisablad] = useState(true)
+  const [value, setValue] = useState();
   useEffect(() => {
     const isValid =
     validateName(fields.name) &&
@@ -34,14 +36,19 @@ const Swiper = () => {
      setDisablad(!isValid)
      
    },[fields])
+
+
+
    const handleChange = (e) => {
-    if (e.target.name === 'tell' && !validatePhoneContent(e.target.value)) return
+    if (e.target.name === 'tell' && !validatePhoneContent(e.target.value))
+     return
     setFields((prev) => ({...prev, [e.target.name] : e.target.value}))
   }
 
   const handleSubmit = (e) => {
-  setFields(initialData)
-  e.preventDefault()
+   setFields(initialData)
+   e.preventDefault()
+   setValue('')
   }
   return (
     <div className='Comments'>
@@ -131,14 +138,17 @@ const Swiper = () => {
           <p>Va biz sizga aloqaga chiqamiz</p>
         </div>
         <form className='call__input' onSubmit={handleSubmit} >
-          <input
-            type="tell"
-            placeholder='+998'
-            onChange={handleChange}
-            value={fields.tell}
+        <PhoneInput
+            className='PhoneInt'
+            type='tell'
+            onChange={setValue}
+            value={value}
             name='tell' 
-            minLength={9}/>
-          <input type="text" placeholder='ism' onChange={handleChange}           value={fields.text} 
+            minLength={9}
+            country="UZ"
+            />
+            
+          <input type="text" placeholder='ism' onChange={handleChange}  value={fields.text} 
           name='text'  required />
           <button>Tasdiqlash</button>
         </form>

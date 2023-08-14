@@ -148,8 +148,12 @@
 input[type=radio]{
 display: none;
 }
-.phoneInt{
-border: none;
+.PhoneInputInput {
+    flex: 1 1;
+    min-width: 0;
+    border: none;
+    border-bottom: 1px solid #03ACF2;
+    padding-bottom: 7px;
 }
 @media screen and (max-width:1144px) {
     .call__info>h2 {
