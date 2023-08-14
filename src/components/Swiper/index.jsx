@@ -1,8 +1,13 @@
 import React from 'react'
 import './Swiper.css'
 import { useState } from 'react'
+
+
 import { FaStar } from 'react-icons/fa'
 import mask from '../../Imgs/Mask.png'
+
+
+
 const Swiper = () => {
     const [rating, setRating] = useState(null) 
     const [ratingOne, setRatingOne] = useState(null) 
@@ -10,6 +15,13 @@ const Swiper = () => {
     const [hover, setHover] = useState(null)
     const [hoverOne, setHoverOne] = useState(null)
     const [hoverTwo, setHoverTwo] = useState(null)
+    const [ism, setIsm] = useState('')
+    const [tell, setTell] = useState('')
+    let sendForm = function(e)  {
+      e.preventDefault()
+    }
+
+
   return (
     <div className='Comments'>
         <p>Mijozlarimiz fikrlar</p>
@@ -97,11 +109,11 @@ const Swiper = () => {
                 <h2>Tel raqamingizni qoldiring</h2>
                 <p>Va biz sizga aloqaga chiqamiz</p>
             </div>
-            <form className='call__input'>
-                <input type="number" name="" id="" placeholder='+(000) 000 00 00' />
-                <input type="text" placeholder='ism' />
+            <form className='call__input' onSubmit={sendForm}>
+              <input type="tell" placeholder='+998' pattern='/^(\+998\d{9}|\d{9})$/' />
+                <input type="text" placeholder='ism'  onChange={(e)=>setIsm(e.target.value)} value={ism} required/>
                 <button>Tasdiqlash</button>
-            </form>
+             </form>
         </div>
     </div>
   )

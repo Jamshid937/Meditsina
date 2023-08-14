@@ -148,7 +148,9 @@
 input[type=radio]{
 display: none;
 }
-
+.phoneInt{
+border: none;
+}
 @media screen and (max-width:1144px) {
     .call__info>h2 {
         font-size: 22px;
