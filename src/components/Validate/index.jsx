@@ -91,7 +91,7 @@ function Validate() {
                         })}
                         disabled={disablad}
                     >
-                        Send
+                        Tasdiqlash
                     </button>
                 </form>
             </div>
