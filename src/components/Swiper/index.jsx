@@ -1,17 +1,12 @@
 import React from 'react'
 import './Swiper.css'
-import { useState, useEffect } from 'react'
-import { validateName, validatePhoneContent, validatePhoneNumber, validateText } from './halper'
-import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
+import { useState } from 'react'
+
 import "react-phone-number-input/style.css";
 import { FaStar } from 'react-icons/fa'
 import mask from '../../Imgs/Mask.png'
+import Validate from '../Validate';
 
-const initialData ={
-  name: '',
-  tell: '',
-  text: '',
-  }
 
 const Swiper = () => {
   const [rating, setRating] = useState(null)
@@ -20,36 +15,8 @@ const Swiper = () => {
   const [hover, setHover] = useState(null)
   const [hoverOne, setHoverOne] = useState(null)
   const [hoverTwo, setHoverTwo] = useState(null)
-  // const [ism, setIsm] = useState('')
-  // const [tell, setTell] = useState('')
-  // let sendForm = (e) => {
-  //   e.preventDefault()
-  // }
-  const [fields,setFields] = useState(initialData)
-  const [disablad, setDisablad] = useState(true)
-  const [value, setValue] = useState();
-  useEffect(() => {
-    const isValid =
-    validateName(fields.name) &&
-     validatePhoneNumber(fields.tell) &&
-     validateText(fields.text)
-     setDisablad(!isValid)
-     
-   },[fields])
 
 
-
-   const handleChange = (e) => {
-    if (e.target.name === 'tell' && !validatePhoneContent(e.target.value))
-     return
-    setFields((prev) => ({...prev, [e.target.name] : e.target.value}))
-  }
-
-  const handleSubmit = (e) => {
-   setFields(initialData)
-   e.preventDefault()
-   setValue('')
-  }
   return (
     <div className='Comments'>
       <p>Mijozlarimiz fikrlar</p>
@@ -131,28 +98,9 @@ const Swiper = () => {
             })}
           </div>
         </div>
+        
       </div>
-      <div id='footer' className='call'>
-        <div className='call__info'>
-          <h2>Tel raqamingizni qoldiring</h2>
-          <p>Va biz sizga aloqaga chiqamiz</p>
-        </div>
-        <form className='call__input' onSubmit={handleSubmit} >
-        <PhoneInput
-            className='PhoneInt'
-            type='tell'
-            onChange={setValue}
-            value={value}
-            name='tell' 
-            minLength={9}
-            country="UZ"
-            />
-            
-          <input type="text" placeholder='ism' onChange={handleChange}  value={fields.text} 
-          name='text'  required />
-          <button>Tasdiqlash</button>
-        </form>
-      </div>
+<Validate/>
     </div>
   )
 }

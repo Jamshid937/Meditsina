@@ -129,85 +129,12 @@
     border-bottom: 1px solid #03ACF2;
 }
 
-.call__input>button {
 
-    max-width: 280px;
-    width: 100%;
-    padding: 10px 40px;
-    color: #FFF;
-    text-align: center;
-    font-family: 'Inter';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border-radius: 35px;
-    background: linear-gradient(136deg, #03ACF2 0%, #83DEAE 100%);
-    border: none;
-}
 input[type=radio]{
 display: none;
 }
-.PhoneInputInput {
-    flex: 1 1;
-    min-width: 0;
-    border: none;
-    border-bottom: 1px solid #03ACF2;
-    padding-bottom: 7px;
-}
-.PhoneInputCountry {
-    position: relative;
-    align-self: stretch;
-    display: flex;
-    align-items: center;
-    margin-right: var(--PhoneInputCountrySelect-marginRight);
-    border-bottom: 1px solid #03ACF2;
-}
-@media screen and (max-width:1144px) {
-    .call__info>h2 {
-        font-size: 22px;
-    }
 
-    .call__info>p {
-        font-size: 16px;
-    }
 
-    @media screen and (max-width:1040px) {
-        .call__info>h2 {
-            font-size: 36px;
-        }
-
-        .call__info>p {
-            font-size: 22px;
-        }
-    }
-
-    .call {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .call__input {
-        max-width: 530px;
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .call__input>input {
-        text-align: center;
-        margin-bottom: 9px;
-    }
-
-    .call__input>button {
-        max-width: 280px;
-        width: 100%;
-    }
-
-    .call__info>p {
-
-        text-align: center;
-    }
-}
 
 @media screen and (max-width:974px) {
     .Comments__cards {
@@ -223,33 +150,3 @@ display: none;
     }
 }
 
-@media screen and (max-width:600px) {
-    .call__input {
-        flex-direction: column;
-    }
-
-    .call__info>p {
-        font-size: 10px;
-    }
-
-    .call__info>h2 {
-        font-size: 16px;
-    }
-
-}
-
-@media screen and (max-width:400px) {
-    .call__input>button {
-        font-size: 10px;
-    }
-
-    .call__input>input {
-        max-width: 280px;
-        width: 100%;
-    }
-    .PhoneInput {
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-}
