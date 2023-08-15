@@ -36,10 +36,12 @@
     gap: 70px 33px;
     margin-top: 76px;
 }
+
 .Comments__cards__card>img {
     position: absolute;
     top: -40px;
 }
+
 .Comments__cards__card {
     position: relative;
     max-width: 400px;
@@ -130,8 +132,8 @@
 }
 
 
-input[type=radio]{
-display: none;
+input[type=radio] {
+    display: none;
 }
 
 
@@ -149,4 +151,3 @@ display: none;
         align-items: center;
     }
 }
-

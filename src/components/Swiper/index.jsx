@@ -98,9 +98,9 @@ const Swiper = () => {
             })}
           </div>
         </div>
-        
+
       </div>
-<Validate/>
+      <Validate />
     </div>
   )
 }

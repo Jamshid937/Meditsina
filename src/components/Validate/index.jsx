@@ -3,7 +3,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import {  validatePhoneContent, validatePhoneNumber, validateText } from './halper'
+import { validatePhoneContent, validatePhoneNumber, validateText } from './halper'
 import classNames from 'classnames'
 import classes from './Validate.module.css'
 const initialData = {
@@ -16,19 +16,19 @@ function Validate() {
     const [disablad, setDisablad] = useState(true)
     useEffect(() => {
         const isValid =
-           
+
             validatePhoneNumber(fields.tell) &&
             validateText(fields.text)
         setDisablad(!isValid)
 
     }, [fields])
     const handleChange = (e) => {
-        if (e.target.name === 'tell' && !validatePhoneContent(e.target.value)) 
-        return 
+        if (e.target.name === 'tell' && !validatePhoneContent(e.target.value))
+            return
         setFields((prev) => ({ ...prev, [e.target.name]: e.target.value }))
     }
 
-    
+
 
     var sendtelegram = function (e) {
 
@@ -54,14 +54,14 @@ function Validate() {
                         onChange={handleChange}
                         value={fields.tell}
                         name='tell'
-                         />
+                    />
                     <input
                         type="text"
                         placeholder='Ism'
                         onChange={handleChange}
                         value={fields.text}
                         name='text'
-                        ></input>
+                    ></input>
                     <button
 
                         className={classNames(classes['order-form__btn'], {
