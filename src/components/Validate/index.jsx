@@ -1,10 +1,9 @@
 
 
 import React from 'react'
-import $ from 'jquery'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import { validateName, validatePhoneContent, validatePhoneNumber, validateText } from './halper'
+import {  validatePhoneContent, validatePhoneNumber, validateText } from './halper'
 import classNames from 'classnames'
 import classes from './Validate.module.css'
 const initialData = {
@@ -24,43 +23,22 @@ function Validate() {
 
     }, [fields])
     const handleChange = (e) => {
-        if (e.target.name === 'tell' && !validatePhoneContent(e.target.value)) return
+        if (e.target.name === 'tell' && !validatePhoneContent(e.target.value)) 
+        return 
         setFields((prev) => ({ ...prev, [e.target.name]: e.target.value }))
     }
-    var telegram_bot_id = "6044421804:AAHHoJoX1szgVpwZBVxVxiAH6YKtBHzlL2M";
-    var chat_id = 602198486;
-    var u_name, tell, message;
-    var ready = function () {
-        tell = fields.tell;
-        message = fields.text;
-        message =  "\nTell: " + tell + "\nIzoh: " + message;
-    };
+
+    
 
     var sendtelegram = function (e) {
-        ready();
-        var settings = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
-            "method": "POST",
-            "headers": {
-                "Content-Type": "application/json",
-                "cache-control": "no-cache"
-            },
-            "data": JSON.stringify({
-                "chat_id": chat_id,
-                "text": message
-            })
-        };
-        $.ajax(settings).done(function (response) {
-        });
+
 
 
         setFields(initialData)
         e.preventDefault()
 
 
-    };
+    }
     return (
         <div>
 
