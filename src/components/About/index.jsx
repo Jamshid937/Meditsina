@@ -15,6 +15,13 @@ import denTistFive from '../../Imgs/denTistFive.png'
 import denTistFour from '../../Imgs/denTistFour.png'
 import denTistSix from '../../Imgs/denTistSix.png'
 import Rectangle from '../../Imgs/Rectangle.png'
+import ignoterapiya from '../../Imgs/ignoterapiya.jpg'
+import plazmalifting from '../../Imgs/plazmalifting.png'
+import ozonoterapiya from '../../Imgs/ozonoterapiya.jpg'
+import proloterapiya from '../../Imgs/proloterapiya.jpg'
+import farnaponktura from '../../Imgs/farmaponktura.jpg'
+import gidromassajnay from '../../Imgs/gidromassajnay.jpg'
+import voyta from '../../Imgs/voyta.jpeg'
 import Swiper from '../Swiper'
 import reg from '../../Imgs/reg.jpg'
 import eeg from '../../Imgs/eeg.jpg'
@@ -112,7 +119,7 @@ const About = () => {
             <div className='treatment__cards'>
                <div className='treatment__cards__card'>
                    <div className='treatment__cards__card__img'>
-                     <img src={Rectangle} alt=''/>
+                     <img src={ignoterapiya} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
                      <h4>Iglorefleksoterapiya</h4>
@@ -121,7 +128,7 @@ const About = () => {
                </div>
                <div className='treatment__cards__card'>
                    <div className='treatment__cards__card__img'>
-                     <img src={Rectangle} alt=''/>
+                     <img src={ozonoterapiya} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
                      <h4>Ozonoterapiya</h4>
@@ -130,7 +137,7 @@ const About = () => {
                </div>
                <div className='treatment__cards__card'>
                    <div className='treatment__cards__card__img'>
-                     <img src={Rectangle} alt=''/>
+                     <img src={plazmalifting} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
                      <h4>Plazmolifting</h4>
@@ -139,7 +146,7 @@ const About = () => {
                </div>
                <div className='treatment__cards__card'>
                    <div className='treatment__cards__card__img'>
-                     <img src={Rectangle} alt=''/>
+                     <img src={proloterapiya} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
                      <h4>Proloterapiya</h4>
@@ -148,7 +155,7 @@ const About = () => {
                </div>
                <div className='treatment__cards__card'>
                    <div className='treatment__cards__card__img'>
-                     <img src={Rectangle} alt=''/>
+                     <img src={voyta} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
                      <h4>Voyta-terapiya</h4>
@@ -157,7 +164,7 @@ const About = () => {
                </div>
                <div className='treatment__cards__card'>
                    <div className='treatment__cards__card__img'>
-                     <img src={Rectangle} alt=''/>
+                     <img src={farnaponktura} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
                      <h4>Farmakopunktura</h4>
@@ -166,7 +173,7 @@ const About = () => {
                </div>
                <div className='treatment__cards__card'>
                    <div className='treatment__cards__card__img'>
-                     <img src={Rectangle} alt=''/>
+                     <img src={gidromassajnay} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
                      <h4>Gidromassaj</h4>
