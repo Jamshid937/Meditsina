@@ -6,7 +6,7 @@ import Phone from '../../Imgs/Phone.png'
 // import {  faBars,faXmark,faCode } from '@fortawesome/free-solid-svg-icons'
 function NavBar() {
     const [click, setClick] = React.useState(false);
-    const [navBar, setNavBar] = React.useState(false)
+    const [navBar] = React.useState(false)
     const handleClick = () => setClick(!click);
     const Close = () => setClick(false);
     return (
