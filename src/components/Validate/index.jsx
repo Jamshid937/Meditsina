@@ -71,7 +71,7 @@ function Validate() {
                 </div>
                 <form className={classes['call__input']} onSubmit={sendtelegram} >
                     <input
-                        type="tell"
+                        type="tel"
                         placeholder='+998'
                         onChange={handleChange}
                         value={fields.tell}
