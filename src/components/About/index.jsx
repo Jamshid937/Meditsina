@@ -20,7 +20,7 @@ import plazmalifting from '../../Imgs/plazmalifting.png'
 import ozonoterapiya from '../../Imgs/ozonoterapiya.jpg'
 import proloterapiya from '../../Imgs/proloterapiya.jpg'
 import farnaponktura from '../../Imgs/farmaponktura.jpg'
-import gidromassajnay from '../../Imgs/gidromassajnay.jpg'
+import gidro from '../../Imgs/gidro.jpg'
 import voyta from '../../Imgs/voyta.jpeg'
 import Swiper from '../Swiper'
 import reg from '../../Imgs/reg.jpg'
@@ -173,7 +173,7 @@ const About = () => {
                </div>
                <div className='treatment__cards__card'>
                    <div className='treatment__cards__card__img'>
-                     <img src={gidromassajnay} alt=''/>
+                     <img src={gidro} alt=''/>
                    </div>
                    <div className='treatment__cards__card__about'>
                      <h4>Gidromassaj</h4>

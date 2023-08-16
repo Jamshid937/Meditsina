@@ -171,11 +171,15 @@
 
   .nav-menu.active {
     background: #E4EAFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
     padding-bottom: 20px;
+    height: 70vh;
   }
 
   .nav-item .active {

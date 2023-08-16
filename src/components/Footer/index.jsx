@@ -13,9 +13,9 @@ const Footer = () => {
         <p className='footer__about__text'>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
        <p className='footer__about__media'>FOllow us on</p>
        <div className='footer__about__media__icons'>
-          <FaFacebook className='fasbook' color='white'/>
-          <FaTelegram color='white'/>
-          <FaInstagram color='white'/>
+        <a href="https://ru-ru.facebook.com/"><FaFacebook className='fasbook' color='white'/></a>  
+          <a href="https://web.telegram.org/"><FaTelegram color='white'/></a>
+         <a href="https://www.instagram.com/"><FaInstagram color='white'/></a> 
        </div>
 
        </div>
@@ -26,7 +26,6 @@ const Footer = () => {
                   exact
                   href="#about"
                   activeClassName="active"
-                //   onClick={click ? handleClick : null}
                 >
                   Men haqimda
                 </a> 
