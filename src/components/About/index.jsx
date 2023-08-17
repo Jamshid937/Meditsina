@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import "./About.css"
 import one from '../../Imgs/one.png'
 import two from '../../Imgs/two.png'
@@ -28,12 +29,13 @@ import eeg from '../../Imgs/eeg.jpg'
 import bac from '../../Imgs/bac.jpg'
 
 const About = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
        <div className='about'>
-          <p className='about__info'>Men bilan tanishuv</p>
-          <h2 id='about' className='about__title' >Men haqimda</h2>
-          <p className='about__text'>⚕️ Bakirova Dilafruz Akbaralievna - diagnostika shifokori, uchinchi toifali shifokor, 5 yillik tajribaga ega. Uchrashuvni onlayn yoki telefon orqali bron qiling.</p>
+          <p className='about__info'>{t('aboutMe')}</p>
+          <h2 id='about' className='about__title' >{t('about')}</h2>
+          <p className='about__text'>⚕️{t('p3')}</p>
 
           <div className='about__imgs-one'>
              <img src={one} alt=""  className='one'/>
@@ -43,13 +45,13 @@ const About = () => {
              <img src={five} alt="" />
              <img src={six} alt="" />
         </div>
-        <h3 className='about__bottom__title'>Zamonoviy uskunalar</h3>
+        <h3 className='about__bottom__title'>{t('h')}</h3>
         <div className='about__bottom'>
          <div className='about__bottom__cards'>
             <img src={reg} alt="" />
             <div className='about__bottom__cards__info'>
-              <h4>Zamonaviy uskunalar</h4>
-              <p>Miyaning reoensefalografiyasi- diagnostika uchun foydalaniladi. </p>
+              <h4>{t('h')}</h4>
+              <p>{t('p4')}</p>
               <div className='about__bottom__cards__info__btn'>
                <button className='btn__reg'>REG</button>
               </div>
@@ -58,8 +60,8 @@ const About = () => {
          <div className='about__bottom__cards'>
             <img src={bac} alt="" />
             <div className='about__bottom__cards__info'>
-              <h4>Zamonaviy uskunalar</h4>
-              <p>Bioakustik tuzatish usuli BAC - bu o'z-o'zini boshqarish mexanizmlarini faollashtirish uchun real vaqt rejimida EEG asosida hosil bo'lgan tovushlar bilan miyaning tartibga soluvchi tuzilmalarini sensorli stimulyatsiya qilish </p>
+              <h4>{t('h')}</h4>
+              <p>{t('p5')}</p>
               <div className='about__bottom__cards__info__btn'>
                <button className='btn__bac'>BAC</button>
               </div>
@@ -68,8 +70,8 @@ const About = () => {
          <div className='about__bottom__cards'>
             <img src={eeg} alt="" />
             <div className='about__bottom__cards__info'>
-              <h4>Zamonaviy uskunalar</h4>
-              <p>Bosh miya bilan bog'liq kasalliklarni aniqlab, diagnoz qo'yuvchi apparat.</p>
+              <h4>{t('h')}</h4>
+              <p>{t('p6')}</p>
               <div className='about__bottom__cards__info__btn'>
                <button className='btn__eeg'>EEG</button>
               </div>
@@ -78,21 +80,21 @@ const About = () => {
         </div>
          <div className='export'>
             <div className='export__about'>
-              <p className='export__about__info'>Sohasi experti</p>
-              <h2 className='export__about__title'>Toshkentning eng yaxshi shifokor yuqori darajadagi xizmatlar.</h2>
+              <p className='export__about__info'>{t('export')}</p>
+              <h2 className='export__about__title'>{t('h2')}</h2>
               <p className='export__about__text'>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts</p>
               <ul className='export__about__list'>
                <li className='export__about__list__item'>
                   <img src={galochka} alt="" />
-                  <p>Yuqori sifatli shifokor jamoasi</p>
+                  <p>{t('li')}</p>
                </li>
                <li className='export__about__list__item'>
                   <img src={galochka} alt="" />
-                  <p>Eng zamonaviy  xizmatlar</p>
+                  <p>{t('li1')}</p>
                </li>
                <li className='export__about__list__item'>
                   <img src={galochka} alt="" />
-                  <p>Birinchi muolajalar uchun chegirmalar</p>
+                  <p>{t('li2')}</p>
                </li>
               </ul>
             </div>
@@ -101,8 +103,8 @@ const About = () => {
             </div>
          </div>
          <div id='servic' className='galery'>
-            <p className='galery__info'>Galery</p>
-            <h2 className='galery__title'>Ishlarimizdan namunalar</h2>
+            <p className='galery__info'>{t('galery')}</p>
+            <h2 className='galery__title'>{t('h3')}</h2>
             <p className='galery__text'>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
             <div className='galery__imgs'>
                <img src={denTistOne} alt="" />
@@ -114,8 +116,8 @@ const About = () => {
             </div>
          </div>
          <div className='treatment'>
-            <p className='treatment__info'>Davolash</p>
-            <h2 className='treatment__title'>Muolajalarimiz turlari</h2>
+            <p className='treatment__info'>{t('treatment')}</p>
+            <h2 className='treatment__title'>{t('h4')}</h2>
             <div className='treatment__cards'>
                <div className='treatment__cards__card'>
                    <div className='treatment__cards__card__img'>

@@ -1,12 +1,11 @@
 import React from 'react'
-import './Swiper.css'
 import { useState } from 'react'
-
+import { useTranslation } from 'react-i18next';
 import "react-phone-number-input/style.css";
 import { FaStar } from 'react-icons/fa'
 import mask from '../../Imgs/Mask.png'
 import Validate from '../Validate';
-
+import './Swiper.css'
 
 const Swiper = () => {
   const [rating, setRating] = useState(null)
@@ -15,12 +14,12 @@ const Swiper = () => {
   const [hover, setHover] = useState(null)
   const [hoverOne, setHoverOne] = useState(null)
   const [hoverTwo, setHoverTwo] = useState(null)
-
+  const { t, i18n } = useTranslation();
 
   return (
     <div className='Comments'>
-      <p>Mijozlarimiz fikrlar</p>
-      <h2>Otzivlar</h2>
+      <p>{t('comment')}</p>
+      <h2>{t('otzivlar')}</h2>
 
       <div className='Comments__cards'>
         <div className='Comments__cards__card'>

@@ -3,6 +3,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next';
 import { validatePhoneContent, validatePhoneNumber, validateText } from './halper'
 import classNames from 'classnames'
 import classes from './Validate.module.css'
@@ -14,6 +15,7 @@ const initialData = {
 function Validate() {
     const [fields, setFields] = useState(initialData)
     const [disablad, setDisablad] = useState(true)
+    const { t, i18n } = useTranslation();
     useEffect(() => {
         const isValid =
 
@@ -44,8 +46,8 @@ function Validate() {
 
             <div id='footer' className={classes['call']}>
                 <div className={classes['call__info']}>
-                    <h2>Tel raqamingizni qoldiring</h2>
-                    <p>Va biz sizga aloqaga chiqamiz</p>
+                    <h2>{t('Tel')}</h2>
+                    <p>{t('p7')}</p>
                 </div>
                 <form className={classes['call__input']} onSubmit={sendtelegram} >
                     <input
@@ -69,7 +71,7 @@ function Validate() {
                         })}
                         disabled={disablad}
                     >
-                        Tasdiqlash
+                        {t('btn2')}
                     </button>
                 </form>
             </div>

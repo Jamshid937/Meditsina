@@ -1,10 +1,16 @@
 import React from 'react'
 import './NavBar.css'
-
+import { useTranslation } from 'react-i18next';
 import Phone from '../../Imgs/Phone.png'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import {  faBars,faXmark,faCode } from '@fortawesome/free-solid-svg-icons'
+
 function NavBar() {
+  const { t, i18n } = useTranslation();
+
+
+
+  function TranslationFunc(e) {
+    i18n.changeLanguage(e.target.value)
+  }
     const [click, setClick] = React.useState(false);
     const [navBar] = React.useState(false)
     const handleClick = () => setClick(!click);
@@ -26,7 +32,7 @@ function NavBar() {
                   className="nav-links"
                   onClick={click ? handleClick : null}
                 >
-                  Men haqimda
+                  {t('about')}
                 </a>
               </li>
               <li className="nav-item">
@@ -37,7 +43,7 @@ function NavBar() {
                   className="nav-links"
                   onClick={click ? handleClick : null}
                 >
-                  Xizmatlar
+                  {t('setting')}
                 </a>
               </li>
               <li className="nav-item">
@@ -48,23 +54,26 @@ function NavBar() {
                   className="nav-links"
                   onClick={click ? handleClick : null}
                 >
-                  Konsultatsiyaga yozilish
+                  {t('shop')}
                 </a>
               </li>
               <li>
-              <select className='nav-item_select__bar'>
-                  <option value="o`zbekcha" className='nav-item_select__option'>O`z</option>
-                  <option value="English">En</option>
-                  <option value="English">Ру</option>
+              <select className='nav-item_select__bar' onChange={TranslationFunc}>
+                  <option value="uz" className='nav-item_select__option'>O`z</option>
+                  <option value="en">En</option>
+                 <option value="ru">RU</option>
                 </select>
               </li>
             </ul>
             <div className='nav-item__phone'>
-               <img src={Phone} alt="" />
-                <select className='nav-item_select'>
-                  <option value="o`zbekcha" className='nav-item_select__option'>O`z</option>
-                  <option value="English">En</option>
-                  <option value="English">Ру</option>
+              <a href="tel:998909420301">
+                <img src={Phone} alt="" />
+              </a>
+               
+                <select className='nav-item_select'onChange={TranslationFunc}>
+                  <option value="uz" className='nav-item_select__option' >O`z</option>
+                  <option value="en">En</option>
+                  <option value="ru">RU</option>
                 </select>
             </div>
             <div className="nav-icon" onClick={handleClick}>
