@@ -72,8 +72,8 @@ function NavBar() {
                
                 <select className='nav-item_select'onChange={TranslationFunc}>
                   <option value="uz" className='nav-item_select__option' >O`z</option>
-                  <option value="en">En</option>
-                  <option value="ru">RU</option>
+                  <option value="en" className='nav-item_select__option'>En</option>
+                  <option value="ru" className='nav-item_select__option'>RU</option>
                 </select>
             </div>
             <div className="nav-icon" onClick={handleClick}>
