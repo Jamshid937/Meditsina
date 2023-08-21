@@ -3,8 +3,8 @@ export const validatePhoneNumber =(phoneNumber)=>{
     return regex.test(phoneNumber)
 }
 
-export const validateName =(name)=>name.length > 2
-export const validateText =(text)=>text.length > 6
+export const validateName = (name)=>name.length > 2
+export const validateText = (text)=>text.length > 3
 
 export const validatePhoneContent =(phoneNumber)=>{
     const regex = /^\+?\d*$/
