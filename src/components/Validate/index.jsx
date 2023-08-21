@@ -60,7 +60,7 @@ function Validate() {
                     />
                     <input
                         type="text"
-                        placeholder='Ism'
+                        placeholder='F.I.SH'
                         onChange={handleChange}
                         value={fields.text}
                         name='text'
