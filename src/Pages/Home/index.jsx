@@ -19,7 +19,7 @@ const Home = () => {
               <div className='header__hero__about__img'>
                <img src={doktor} alt="doktor" />
             </div>
-              <button>{t('btn')}</button>
+              <button><a href="#form">{t('btn')}</a></button>
             </div>
             <div className='header__hero__img'>
                <img src={doktor} alt="doktor" />

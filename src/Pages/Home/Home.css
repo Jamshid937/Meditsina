@@ -23,7 +23,7 @@
     line-height: normal;
 }
 
-.header__hero__about>button {
+.header__hero__about>button{
     display: flex;
     max-width: 361px;
     width: 100%;
@@ -34,6 +34,11 @@
     background: linear-gradient(136deg, #03ACF2 0%, #83DEAE 100%);
     flex-shrink: 0;
     border: none;
+
+    margin-top: 213px;
+}
+
+.header__hero__about>button>a{
     color: #FFF;
     text-align: center;
     font-family: 'Inter';
@@ -41,7 +46,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 213px;
 }
 .header__hero__img{
 
