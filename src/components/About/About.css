@@ -387,7 +387,9 @@
     .export__about__title {
         font-size: 20px;
     }
-
+    .export__img>img {
+        width: 346px;
+    }
     .export__about__text {
         font-size: 16px;
     }
@@ -420,4 +422,7 @@
          height: 150px;
          border-radius: 10px;
      }
+     .export__img>img {
+        width: 300px;
+    }
 }
