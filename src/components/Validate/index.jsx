@@ -56,6 +56,7 @@ function Validate() {
                         onChange={handleChange}
                         value={fields.tell}
                         name='tell'
+                        maxLength={11}
                     />
                     <input
                         type="text"
