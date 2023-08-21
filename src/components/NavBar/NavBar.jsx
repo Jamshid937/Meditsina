@@ -16,7 +16,7 @@ function NavBar() {
     const handleClick = () => setClick(!click);
     const Close = () => setClick(false);
     return (
-      <div className={navBar ? 'navbar active' : 'navbar'} id='home' >
+      <div className={navBar ? 'navbar active' : 'navbar'}  >
        <div className={click ? "main-container" : ""}  onClick={()=>Close()} />
         <nav className="navbar" onClick={e => e.stopPropagation()}>
           <div className="nav-container">

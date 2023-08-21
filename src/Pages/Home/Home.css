@@ -10,6 +10,8 @@
 
 .header__hero {
     display: flex;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .header__hero__about>p {
@@ -52,21 +54,32 @@
 margin-left: 72px;
 margin-top: 83px;
 }
+.header__hero__img > img{
+width: 600px;
+/* width: 100%; */
+height:690px ;
+border-radius: 30px;
+}
 .header__hero__about__img{
 display: none;
 }
 @media screen and (max-width:943px) {
-    .header__hero__img{
+    .header__hero__img {
     display: none;
     } 
+    .header__hero__title {
+    text-align: center;
+    }
     .header__hero__about__img{
     display: block;
     margin-top: 48px;
     max-width: 633px;
     width: 100%;
+  
     }
     .header__hero__about__img>img{
-    width: 100%;
+    width: 100%;  
+    border-radius: 30px;
     }
     .header__hero__about{
     display: flex;

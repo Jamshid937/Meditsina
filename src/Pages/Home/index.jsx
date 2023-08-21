@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import NavBar from '../../components/NavBar/NavBar'
 import Container from '../../layout/container'
 import './Home.css'
-import doktor from '../../Imgs/doktor.png'
+import doktor from '../../Imgs/dilafruzone.jpg'
 import About from '../../components/About'
 import Footer from '../../components/Footer'
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
     <div>
         <NavBar/>
          <Container>
-           <div className='header__hero-titleBox'><h1 className='header__hero__title'>Dilafruz Bakirova</h1></div>
+           <div className='header__hero-titleBox'><h1 className='header__hero__title' id='home'>Dilafruz Bakirova</h1></div>
            <div className='header__hero'>
             <div className='header__hero__about'>
               <p>{t('p')}</p>
@@ -26,7 +26,6 @@ const Home = () => {
             </div>
            </div>
            <About/>
-           
         </Container>
         <Footer/>
     </div>
