@@ -5,13 +5,15 @@ import './Footer.css'
 import Tell from '../../Imgs/Tell.png'
 import Logo from '../../Imgs/Logo.png'
 import { FaFacebook, FaInstagram, FaTelegram } from 'react-icons/fa'
+import  logo from '../../Imgs/headerLogo.png'
+
 const Footer = () => {
   const { t, i18n } = useTranslation();
   return (
 <div className='footerBack'>
     <div className='footer'>
        <div className='footer__about'>
-        <p className='footer__about__logo'>Logo</p>
+        <img src={logo} className='footer__about__logo'></img>
         <p className='footer__about__text'>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
        <p className='footer__about__media'>{t('follow')}</p>
        <div className='footer__about__media__icons'>
