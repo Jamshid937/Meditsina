@@ -85,7 +85,7 @@ const Footer = () => {
         </div>
         <div className='primeTech'>
            <p>{t('creator')}</p>
-           <img src={Logo} alt="" />
+           <a href="https://primetechgroup.uz/"><img src={Logo} alt="" /></a>
         </div>
        </div>
     </div>

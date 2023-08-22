@@ -25,6 +25,7 @@
     line-height: normal;
     text-transform: uppercase;
     border-bottom: 1px solid #03ACF2;
+    width: 80%;
 }
 
 .call__input {
@@ -108,7 +109,7 @@
     }
 
     .call__input {
-        max-width: 530px;
+        max-width: 600px;
         width: 100%;
         flex-direction: column;
     }
@@ -141,9 +142,21 @@
     .call__info>h2 {
         font-size: 16px;
     }
+    .call__input {
+        width: 400px;
+        
+        flex-direction: column;
+    }
 
 }
 
+@media screen and (max-width:450px) {
+    .call__input {
+        width: 350px;
+        
+        flex-direction: column;
+    }
+}
 @media screen and (max-width:400px) {
     .call__input>button {
         font-size: 10px;
@@ -153,4 +166,11 @@
         max-width: 280px;
         width: 100%;
     }
+    .call__input {
+        width: 290px;
+       
+        flex-direction: column;
+    }
 }
+
+@media screen and (max-width:300px) {}
