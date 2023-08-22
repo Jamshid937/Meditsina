@@ -2,7 +2,7 @@ import React from 'react'
 import './NavBar.css'
 import { useTranslation } from 'react-i18next';
 import Phone from '../../Imgs/Phone.png'
-
+import  logo from '../../Imgs/headerLogo.png'
 function NavBar() {
   const { t, i18n } = useTranslation();
 
@@ -21,7 +21,7 @@ function NavBar() {
         <nav className="navbar" onClick={e => e.stopPropagation()}>
           <div className="nav-container">
             <a exact href="#home" className="nav-logo" >
-              Logo
+              <img src={logo} alt="" />
             </a>
             <ul className={click ? "nav-menu active" : "nav-menu" }>
               <li className="nav-item">

@@ -1,5 +1,5 @@
 .navbar {
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,14 +33,9 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.nav-logo {
-  color: #2C50CB;
-  font-family: 'Inter';
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  text-decoration: none;
-  line-height: normal;
+.nav-logo>img {
+width: 100px;
+height: 100px;
 }
 
 .nav-menu {
@@ -195,15 +190,15 @@
   .nav-icon {
     display: block;
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 60px;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
     color: #2C50CB;
 
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
 }
 
