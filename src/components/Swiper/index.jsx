@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import "react-phone-number-input/style.css";
 import { FaStar } from 'react-icons/fa'
 import mask from '../../Imgs/Mask.png'
+import botir from '../../Imgs/botir.png'
+import komilla from '../../Imgs/komila.png'
 import Validate from '../Validate';
 import './Swiper.css'
 
@@ -25,7 +27,7 @@ const Swiper = () => {
         <div className='Comments__cards__card'>
           <img src={mask} alt="" />
           <h4>Azizova Nafisa</h4>
-          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
+          <p>Doktorlar juda hushmuomilali va e'tiborli</p>
           <div className="comments__icon">
             {[...Array(5)].map((star, index) => {
               const currentRatingOne = index + 1;
@@ -48,9 +50,9 @@ const Swiper = () => {
           </div>
         </div>
         <div className='Comments__cards__card'>
-          <img src={mask} alt="" />
-          <h4>Azizova Nafisa</h4>
-          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
+          <img src={botir} alt="" />
+          <h4>Ubaydullayev Botir</h4>
+          <p>Malakali shifokor,o`z ishini ustasi qo`li yengil.</p>
           <div className="comments__icon">
             {[...Array(5)].map((star, index) => {
               const currentRatingTwo = index + 1;
@@ -73,9 +75,9 @@ const Swiper = () => {
           </div>
         </div>
         <div className='Comments__cards__card'>
-          <img src={mask} alt="" />
-          <h4>Azizova Nafisa</h4>
-          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
+          <img src={komilla} alt="" />
+          <h4>Usmonova Komila</h4>
+          <p>Mening og`lim Voyta-terapiya muolajalarini olgan edi ,natijasi sezilarli darajada</p>
           <div className="comments__icon">
             {[...Array(5)].map((star, index) => {
               const currentRating = index + 1;
