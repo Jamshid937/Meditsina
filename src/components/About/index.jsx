@@ -125,7 +125,7 @@ const About = () => {
                    </div>
                    <div className='treatment__cards__card__about'>
                      <h4>Iglorefleksoterapiya</h4>
-                     <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
+                     <p>{t('Iglorefleksoterapiya')} </p>
                    </div>
                </div>
                <div className='treatment__cards__card'>
@@ -134,7 +134,7 @@ const About = () => {
                    </div>
                    <div className='treatment__cards__card__about'>
                      <h4>Ozonoterapiya</h4>
-                     <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
+                     <p>{t('Ozonoterapiya')}</p>
                    </div>
                </div>
                <div className='treatment__cards__card'>
@@ -143,7 +143,7 @@ const About = () => {
                    </div>
                    <div className='treatment__cards__card__about'>
                      <h4>Plazmolifting</h4>
-                     <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
+                     <p>{t('Plazmolifting')}</p>
                    </div>
                </div>
                <div className='treatment__cards__card'>
@@ -152,7 +152,7 @@ const About = () => {
                    </div>
                    <div className='treatment__cards__card__about'>
                      <h4>Proloterapiya</h4>
-                     <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
+                     <p>{t('Proloterapiya')}</p>
                    </div>
                </div>
                <div className='treatment__cards__card'>
@@ -161,7 +161,7 @@ const About = () => {
                    </div>
                    <div className='treatment__cards__card__about'>
                      <h4>Voyta-terapiya</h4>
-                     <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
+                     <p>{t('Voyta-terapiya')}</p>
                    </div>
                </div>
                <div className='treatment__cards__card'>
@@ -170,25 +170,7 @@ const About = () => {
                    </div>
                    <div className='treatment__cards__card__about'>
                      <h4>Farmakopunktura</h4>
-                     <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
-                   </div>
-               </div>
-               <div className='treatment__cards__card'>
-                   <div className='treatment__cards__card__img'>
-                     <img src={gidro} alt=''/>
-                   </div>
-                   <div className='treatment__cards__card__about'>
-                     <h4>Gidromassaj</h4>
-                     <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
-                   </div>
-               </div>
-               <div className='treatment__cards__card'>
-                   <div className='treatment__cards__card__img'>
-                     <img src={Rectangle} alt=''/>
-                   </div>
-                   <div className='treatment__cards__card__about'>
-                     <h4>Bel og’rig’ini davolash</h4>
-                     <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
+                     <p>{t('Farmakopunktura')}</p>
                    </div>
                </div>
             </div>

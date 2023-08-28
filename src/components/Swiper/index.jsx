@@ -21,7 +21,7 @@ const Swiper = () => {
       <p>{t('comment')}</p>
       <h2>{t('otzivlar')}</h2>
 
-      <div className='Comments__cards'>
+      <div className='Comments__cards '>
         <div className='Comments__cards__card'>
           <img src={mask} alt="" />
           <h4>Azizova Nafisa</h4>

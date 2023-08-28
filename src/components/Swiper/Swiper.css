@@ -8,7 +8,9 @@
     letter-spacing: 0.96px;
     text-transform: uppercase;
 }
-
+.Comments{
+margin-top: 120px;
+}
 .Comments>h2 {
     color: #113766;
     font-family: 'Inter';
